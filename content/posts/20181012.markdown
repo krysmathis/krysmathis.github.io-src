@@ -1,0 +1,7 @@
+title: First post
+slug: initial
+category: Blog
+date: 2018-10-12
+modified: 2018-10-12
+
+# hello there!
