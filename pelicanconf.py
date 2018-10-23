@@ -19,15 +19,17 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+LINKS = (('Portfolio', 'http://krysmathis.com'),)
+
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/krysmathis'),
+          ('github', 'https://github.com/krysmathis'),
+          ('twitter', 'https://twitter.com/coldbuckets'))
+         
+
+MENUITEMS = (('Archives', '/archives.html'),
+             ('Categories', '/categories.html'),
+             ('Tags', '/tags.html'),)
 
 DEFAULT_PAGINATION = 10
 THEME = "/Users/krystopher/workspace/portfolio-site/pelican-themes/Flex"
