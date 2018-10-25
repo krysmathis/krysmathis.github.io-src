@@ -5,6 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Krystopher Mathis'
 SITENAME = 'krysmathis.com'
 SITEURL = '/public'
+MAIN_MENU = True
 
 PATH = 'content'
 
@@ -20,12 +21,16 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 
-LINKS = (('Portfolio', 'http://krysmathis.com'),)
+
+LINKS = (('Portfolio', 'http://krysmathis.com'),
+         ('Another', '/tags.html    '),)
 
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/krysmathis'),
           ('github', 'https://github.com/krysmathis'),
           ('twitter', 'https://twitter.com/coldbuckets'))
-         
+
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True  
 
 MENUITEMS = (('Archives', '/archives.html'),
              ('Categories', '/categories.html'),
@@ -38,5 +43,5 @@ RELATIVE_URLS = True
 
 MARKUP = ('md', 'ipynb')
 
-PLUGIN_PATH = './plugins'
+PLUGIN_PATHS = ['./plugins']
 PLUGINS = ['ipynb.markup']
